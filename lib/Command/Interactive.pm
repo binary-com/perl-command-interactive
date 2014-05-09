@@ -1,9 +1,11 @@
 package Command::Interactive;
+# ABSTRACT: handles interactive (and non-interactive) process invocation
 
 use strict;
 use warnings;
 
 use Moose;
+
 
 =head1 NAME
 

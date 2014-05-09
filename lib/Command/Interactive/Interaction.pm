@@ -1,4 +1,5 @@
 package Command::Interactive::Interaction;
+# ABSTRACT: handles interactive (and non-interactive) process invocation
 
 use strict;
 use warnings;
