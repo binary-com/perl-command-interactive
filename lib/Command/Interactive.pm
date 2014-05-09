@@ -381,7 +381,7 @@ __PACKAGE__->meta->make_immutable;
 
 =head1 AUTHOR
 
-Nick Marden, <nick@verticalresponse.com>
+Binary.com, <perl@binary.com>
 
 =head1 LICENSE AND COPYRIGHT
 

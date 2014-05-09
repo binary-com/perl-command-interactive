@@ -147,7 +147,7 @@ sub type {
 
 =head1 AUTHOR
 
-Nick Marden, C<< <nick at regentmarkets dot com> >>
+Binary.com, <perl@binary.com>
 
 =head1 COPYRIGHT
 
