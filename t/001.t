@@ -1,9 +1,9 @@
 #!/usr/bin/perl
 use strict; use warnings;
 
-use Test::More;
 use lib 'lib';
+use Test::More (tests => 2);
 
 require_ok('Command::Interactive');
-done_testing();
+require_ok('Command::Interactive::Interaction');
 
