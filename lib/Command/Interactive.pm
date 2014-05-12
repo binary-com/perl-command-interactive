@@ -383,9 +383,10 @@ __PACKAGE__->meta->make_immutable;
 
 Binary.com, <perl@binary.com>
 
-=head1 LICENSE AND COPYRIGHT
+=head1 LICENSE
 
-Copyright 2014 Binary.com
+This module is free software; you can redistribute it and/or modify it under the
+same terms as Perl itself.
 
 =cut
 

@@ -145,16 +145,19 @@ sub type {
     return $self->expected_string_is_regex ? 'regex' : 'string';
 }
 
+no Moose;
+__PACKAGE__->meta->make_immutable;
+
+1;
+
 =head1 AUTHOR
 
 Binary.com, <perl@binary.com>
 
-=head1 COPYRIGHT
+=head1 LICENSE
 
-(c) 2014 Binary.com
+This module is free software; you can redistribute it and/or modify it under the
+same terms as Perl itself.
 
 =cut
 
-no Moose;
-__PACKAGE__->meta->make_immutable;
-1;
