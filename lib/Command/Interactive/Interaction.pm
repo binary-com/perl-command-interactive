@@ -78,7 +78,7 @@ has send_newline_with_response => (
 =head2 is_error (DEFAULT: FALSE)
 
 Whether expected_string should be considered the indication of an error. If
-is_error is set to true and BOM::Utility::SystemCommand encounters
+is_error is set to true and Command::Interactive encounters
 <expected_string>, processing of the invoked command will cease and
 Command::Interactive will return an error result indicating the discovered value of <expected_string> that was understood to indicate an error.
 
@@ -93,7 +93,7 @@ has is_error => (
 =head2 is_required (DEFAULT: FALSE)
 
 Whether the C<expected_string> must be seen prior to the termination of the
-command invoked by BOM::Utility::SystemCommand. If this field is set to true and
+command invoked by Command::Interactive. If this field is set to true and
 C<expected_string> is not encountered prior to the end of the command output,
 Command::Interactive will return an error result indicating that the command was not successful due to the fact that C<expected_string> was not found.
 

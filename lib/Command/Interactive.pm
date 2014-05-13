@@ -74,7 +74,8 @@ has debug_logfile => (
 
 =head2 echo_output (DEFAULT: FALSE)
 
-Whether to echo output to the specified output_stream(). This allows users of BOM::Utility::SystemCommand to see what is going on, but it also can clutter an interface with lots of superfluous command output. Use it wisely.
+Whether to echo output to the specified output_stream(). This allows users of
+Command::Interactive to see what is going on, but it also can clutter an interface with lots of superfluous command output. Use it wisely.
 
 See web_format() for a discussion about how to format command output for web interfaces.
 
@@ -88,7 +89,9 @@ has echo_output => (
 
 =head2 interactions (DEFAULT: [], the empty arrayref)
 
-An array reference of BOM::Utility::SystemCommand::Interaction objects that specify the interactions that may (or must) occur during the execution of the command. See C<BOM::Utility::SystemCommand::Interaction> for more information on specifying rules about command interactions.
+An array reference of Command::Interactive::Interaction objects that specify the
+interactions that may (or must) occur during the execution of the command. See
+C<Command::Interactive::Interaction> for more information on specifying rules about command interactions.
 
 =cut
 
@@ -111,7 +114,7 @@ has output_stream => (
 
 =head2 timeout (DEFAULT: undef)
 
-If defined, represents the timeout (in seconds) that BOM::Utility::SystemCommand will wait for output when run() is called.
+If defined, represents the timeout (in seconds) that Command::Interactive will wait for output when run() is called.
 
 =cut
 
@@ -354,7 +357,10 @@ sub _fixup_command_to_catch_stderr {
 
 =head2 _log($line_to_log)
 
-Used for internal logging purposes when debug_logfile() is defined. See the discussion of debug_logfile() for a better way to debug YOUR command's execution; this method is intended for consumption by developers of BOM::Utility::SystemCommand.
+Used for internal logging purposes when debug_logfile() is defined. See the
+discussion of debug_logfile() for a better way to debug YOUR command's
+execution; this method is intended for consumption by developers of
+Command::Interactive.
 
 =cut
 
