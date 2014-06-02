@@ -33,7 +33,7 @@ $interaction->is_error(1);
 is($command->run("echo yes"), "Got error string 'yes', which matched error detection string 'yes'", "Detect known error strings");
 
 $command->interactions([]);
-is($command->run("asdfasdf"), 'Could not execute asdfasdf: No such file or directory', "Bogus command");
+like($command->run("asdfasdf"), qr/Could not execute asdfasdf/, "Bogus command");
 is($command->run("false"), 'Error executing false: ', "Command returning non-zero value");
 
 $command->always_use_expect(1);
