@@ -6,8 +6,7 @@ use warnings;
 use lib 'lib';
 use File::Temp ();
 use IO::File;
-use Test::More (tests => 22);
-use Test::NoWarnings;
+use Test::More (tests => 21);
 use Test::Exception;
 use Command::Interactive;
 
@@ -45,7 +44,7 @@ is(defined($tempfh), 1, "Created a temporary file for output stream testing");
 $command->output_stream($tempfh);
 $command->echo_output(1);
 my $test_string = "This is a test string";
-is($command->run("echo -n '$test_string'"), undef, "Echo some output");
+is($command->run("perl -e 'print qq|$test_string|'"), undef, "Echo some output");
 $tempfh->close;
 $tempfh = IO::File->new($tempfile);
 is(defined($tempfh), 1, "Re-open temporary file for output stream testing");
