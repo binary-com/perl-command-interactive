@@ -7,7 +7,7 @@ perl:
 before_install:
     # install prereqs
     - "cpanm Moose"
-    - "cpanm Expecti"
+    - "cpanm Expect"
     - "cpanm Test::NoWarnings"
     - "cpanm Test::Exception"
     # install dist development dependencies
