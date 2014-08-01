@@ -6,7 +6,6 @@ perl:
     - "5.12"
 before_install:
     # install prereqs
-    - "cpanm Devel::Cover::Report::Coveralls"
     - "cpanm Moose"
     - "cpanm Expect"
     - "cpanm Test::NoWarnings"
@@ -17,6 +16,4 @@ before_install:
     - "dzil build --in $tmpbuild"
     - "perl -MCPAN::Meta -e '$,=\"\\n\"; print CPAN::Meta->load_file(\"$ENV{tmpbuild}/META.json\")->effective_prereqs->requirements_for(\"develop\", \"requires\")->required_modules' | xargs cpanm"
 install: "dzil listdeps | xargs cpanm"
-script:
-    - "dzil test --release"
-    - "cover -test -report coveralls"
+script: "dzil test --release"
