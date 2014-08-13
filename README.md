@@ -3,6 +3,7 @@
 Command::Interactive handles interactive (and non-interactive) process invocation through a reliable and easily configured interface.
 
 [![Build Status](https://travis-ci.org/binary-com/perl-command-interactive.svg?branch=master)](https://travis-ci.org/binary-com/perl-command-interactive)
+[![Gitter chat](https://badges.gitter.im/binary-com/perl-command-interactive.png)](https://gitter.im/binary-com/perl-command-interactive)
 
 SYNOPSIS
 
