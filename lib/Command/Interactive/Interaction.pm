@@ -3,6 +3,8 @@ package Command::Interactive::Interaction;
 use strict;
 use warnings;
 
+our $VERSION = 1.1;
+
 use Moose;
 
 =head1 NAME
