@@ -6,7 +6,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME             => 'Command::Interactive',
     AUTHOR           => q{binary.com <perl@binary.com>},
-    VERSION_FROM     => 'lib/Command/Interactive.pm ',
+    VERSION_FROM     => 'lib/Command/Interactive.pm',
     ABSTRACT_FROM    => 'lib/Command/Interactive.pm',
     LICENSE          => 'Artistic_2_0',
     PL_FILES         => {},
