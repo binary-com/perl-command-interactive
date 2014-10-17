@@ -6,10 +6,12 @@ perl:
     - "5.12"
 before_install:
     # install prereqs
-    - "cpanm Test::NoWarnings"
-    - "cpanm Test::Exception"
-    - "cpanm Moose"
-    - "cpanm Expect"
-    - "cpanm Devel::Cover::Report::Coveralls"
+    - cpanm Test::NoWarnings
+    - cpanm Test::Exception
+    - cpanm Moose
+    - cpanm Expect
+    - cpanm Devel::Cover::Report::Coveralls
+install:
+    - cpanm Test::NoWarnings
 script:
     perl Makefile.PL && make test && cover -test -report coveralls
