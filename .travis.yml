@@ -14,4 +14,6 @@ before_install:
 install:
     - cpanm Test::NoWarnings
 script:
-    perl Makefile.PL && make test && cover -test -report coveralls
+    - perl Makefile.PL 
+    - make test 
+    - cover -test -report coveralls
