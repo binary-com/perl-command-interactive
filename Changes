@@ -1,5 +1,8 @@
 Command::Interactive
 
+1.2	5/11/2014
+	Fixed test cases with non-English locales
+
 0.03	06/06/2014
         Fixed test cases failing with some versions of IO::Pty
         Fixed test case on some versions of OSX with echo -n not working
