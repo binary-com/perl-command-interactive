@@ -10,9 +10,10 @@ use Test::More (tests => 22);
 use Test::NoWarnings;
 use Test::Exception;
 use Command::Interactive;
+use POSIX qw(locale_h);
 use locale;
 
-setlocale('LC_ALL', 'en');
+setlocale(LC_ALL, 'en');
 
 # Test 1. Create a simple expected interaction
 # and verify that it works "echo yes"
