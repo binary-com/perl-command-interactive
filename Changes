@@ -1,0 +1,8 @@
+Command::Interactive
+
+0.03	06/06/2014
+        Fixed test cases failing with some versions of IO::Pty
+        Fixed test case on some versions of OSX with echo -n not working
+
+0.02    03/06/2014
+        Fixing make test errors when locale is not C or English

@@ -7,6 +7,10 @@ use Test::More tests => 3;
 use Test::NoWarnings;
 use Test::Exception;
 use Command::Interactive;
+use locale;
+
+setlocale('LC_ALL', 'en');
+
 
 my $command = Command::Interactive->new;
 
