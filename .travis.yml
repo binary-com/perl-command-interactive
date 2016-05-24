@@ -18,8 +18,6 @@ before_install:
     - cpanm -n Moose
     - cpanm -n Expect
     - cpanm -n Devel::Cover::Report::Coveralls
-install:
-    - cpanm Test::NoWarnings
 script:
     - perl Makefile.PL 
     - make test 
