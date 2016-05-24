@@ -13,11 +13,11 @@ before_install:
     - build-perl
     - perl -V
     # install prereqs
-    - cpanm Test::NoWarnings
-    - cpanm Test::Exception
-    - cpanm Moose
-    - cpanm Expect
-    - cpanm Devel::Cover::Report::Coveralls
+    - cpanm -n Test::NoWarnings
+    - cpanm -n Test::Exception
+    - cpanm -n Moose
+    - cpanm -n Expect
+    - cpanm -n Devel::Cover::Report::Coveralls
 install:
     - cpanm Test::NoWarnings
 script:
