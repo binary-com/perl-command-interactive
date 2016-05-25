@@ -1,19 +1,25 @@
 language: perl
 perl:
+    - "5.24"
+    - "5.22"
+    - "5.20"
     - "5.18"
     - "5.16"
     - "5.14"
     - "5.12"
 before_install:
+    - git clone git://github.com/travis-perl/helpers ~/travis-perl-helpers
+    - source ~/travis-perl-helpers/init
+    - build-perl
+    - perl -V
     # install prereqs
-    - cpanm Test::NoWarnings
-    - cpanm Test::Exception
-    - cpanm Moose
-    - cpanm Expect
-    - cpanm Devel::Cover::Report::Coveralls
-install:
-    - cpanm Test::NoWarnings
+    - cpanm -n Test::NoWarnings
+    - cpanm -n Test::Exception
+    - cpanm -n Moose
+    - cpanm -n Expect
+    - cpanm -n Devel::Cover::Report::Coveralls
 script:
     - perl Makefile.PL 
     - make test 
     - cover -test -report coveralls
+
