@@ -19,9 +19,10 @@ before_install:
     - cpanm -n Test::Exception
     - cpanm -n Moose
     - cpanm -n Expect
-    - cpanm -n Devel::Cover::Report::Coveralls
+    - cpanm -n Test::Requires::Git
+    - cpanm -n Devel::Cover::Report::Codecov
 script:
     - perl Makefile.PL 
     - make test 
-    - cover -test -report coveralls
+    - cover -test -report codecov
 
