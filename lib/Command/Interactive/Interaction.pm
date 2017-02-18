@@ -3,7 +3,7 @@ package Command::Interactive::Interaction;
 use strict;
 use warnings;
 
-our $VERSION = 1.1;
+## VERSION
 
 use Moose;
 
